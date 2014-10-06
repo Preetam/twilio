@@ -3,6 +3,8 @@ package twilio
 import (
 	"io"
 	"net/http"
+	"net/url"
+	"strings"
 )
 
 func Text(account, token, to, from, body string) (io.ReadCloser, error) {
